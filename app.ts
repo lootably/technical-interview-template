@@ -5,7 +5,7 @@ import cookieParser from 'cookie-parser';
 import config from './config';
 
 // API Routes
-import accountRouter from './routes/account';
+import accountRouter from './routes/account/get';
 
 // Types
 import type GlobalObject from 'types/GlobalObject';

@@ -28,7 +28,7 @@ function request<ReturnType>(
 }
 
 async function serverSideRequest<ReturnType>(config: AxiosRequestConfig): Promise<AxiosResponse<ReturnType>> {
-  const nextHeaders = headers();
+  const nextHeaders = await headers();
 
   const cookieHeader = nextHeaders.get('cookie');
 
